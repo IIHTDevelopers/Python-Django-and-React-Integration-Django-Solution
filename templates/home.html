@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <!-- Linking to a static CSS file -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/style.css' %}"
+    />
+  </head>
+  <body>
+    <h1>Welcome to the Blog</h1>
+    <p>This is a test page to verify static file loading in production.</p>
+
+    <!-- A button that uses static images -->
+    <img src="{% static 'images/sample_image.jpeg' %}" alt="Sample Image" />
+  </body>
+</html>
